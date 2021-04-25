@@ -1,0 +1,65 @@
+.DS_Store
+# python compiled file
+.pyc
+.pyo
+
+# env dir
+venv
+venv*
+# info
+*.*-info
+env*
+env/
+.flaskenv
+
+# build
+build/
+
+# distribution files
+dist/
+.egg
+.eggs
+.egg-info/
+_mailinglist
+.tox/
+.cache/
+.idea/
+_build/
+
+# intellij idea project directory
+.idea
+
+# temp editing files
+.swap
+.swp
+.swo
+*.*_cahce
+
+__pycache__
+*pycache*
+.*.sw*
+
+# migration
+migrations
+.out
+.coverage
+.coverage.*
+coverage.xml
+.cg-analusis*
+.scannerwork/*
+.vscode/*
+.vscode
+.pytest_cache/*
+.pytest_cache
+.scannerwork/*
+htmlcov/
+*.cover
+
+
+# logs
+*.log
+tags
+.tar.gz
+
+# keys
+.coveralls.yml
