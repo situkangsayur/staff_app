@@ -1,7 +1,7 @@
 # staff_app
 Sample app for staff
 
-How to run
+## How to run
 ---
 install virtualenv in your os:
 (pip)
@@ -19,11 +19,11 @@ activate the virtual env:
 ```
 
 yang dibutuhkan : 
-    * python3
-    * flask
-    * flask_restx
-    * flask_mongoengine
-    * mongodb (install mongodb server)
+* python3
+* flask
+* flask_restx
+* flask_mongoengine
+* mongodb (install mongodb server)
 
 install libs :
 ```
