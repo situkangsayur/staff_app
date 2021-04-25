@@ -1,7 +1,8 @@
-from .view import api as staff_api
+# sebelumnya tanpa menggunakan flask_restx
+'''
+from flask import Blueprint
 
-def add_namespace_staff(api):
-    api.add_namespace(staff_api, path = '/api/staff')
+api = Blueprint('staff', __name__)
 
-
-
+from . import view
+'''
