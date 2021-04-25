@@ -1,7 +1,6 @@
-from . import api
 from flask import request, jsonify, make_response
 from flask_restx import Resource
-from ..utils.staf_dto import Staff
+from ..utils.staf_dto import StaffDto
 from ..models import Staff
 import logging
 
@@ -15,19 +14,17 @@ def hello():
 def staff():
     return 'hello staff'
 '''
-api = Staff.api
-model = Staff.model
+api = StaffDto.api
+model = StaffDto.model
 
 @api.route('')
-class Staff(Resource):
+class StaffRoute(Resource):
 
     @api.response(201, 'add data success')
     @api.doc('crate new staff')
     @api.expect(model)
     def post(self):
         data = request.json 
-        logging.debug(data) 
         staff = Staff(**data)
         staff.save()
-        # process
         return make_response(jsonify(data), 201)

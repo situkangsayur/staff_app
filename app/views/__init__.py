@@ -1,6 +1,7 @@
-from flask import Blueprint
+from .view import api as staff_api
 
-api = Blueprint('staff', __name__)
+def add_namespace_staff(api):
+    api.add_namespace(staff_api, path = '/api/staff')
 
-from . import view
+
 

@@ -1,7 +1,6 @@
 from flask_restx import Namespace, fields
 
-
-class Staff():
+class StaffDto():
 
     api = Namespace('Staff API', description = 'sample api for staff')
 
