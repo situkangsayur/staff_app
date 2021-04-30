@@ -13,7 +13,7 @@ mongodb_config = {
 db = MongoEngine()
 
 # membuat restx api untuk nanti dihubungakan dengan flask app
-api = Api()
+# api = Api()
 
 def create_app(mode):
 
@@ -30,13 +30,13 @@ def create_app(mode):
     db.init_app(app)
 
     # hubungkan restx api dengan flask app
-    api.init_app(app)
+    # api.init_app(app)
 
     # import view atau router untuk staff api rename atau beri nama alias staff api
-    from .views.view import api as staff_api
+    from .views.staff import blueprint as staff_api
 
     # add staff_api yang merupakan router ke restx api dengan method add_namespace
-    api.add_namespace(staff_api, path = '/api/staff')
+    app.register_blueprint(staff_api, url_prefix = '/api/v1/')
 
     # kembalikan flask app untuk dijalankan di tempat lain (file main.py)
     return app
