@@ -1,0 +1,5 @@
+recursive-include app/ *
+recursive-include instance *
+recursive-include config *
+include requirements.txt
+include gunicorn.conf.py

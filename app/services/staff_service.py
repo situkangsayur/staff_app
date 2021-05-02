@@ -5,8 +5,7 @@ class StaffService(object):
 
     @staticmethod
     def save(data):
+        pass
 
-        try:
-            data
 
         
